@@ -117,27 +117,32 @@ public class MergeSort {
     public static void main(String[] args) {
         MergeSort ms = new MergeSort();
 
-//        int[] arr = {10, 1, 0, 3, 4, 20, 11, 100, 2, 5, 7, 14, 10};
+        int[] arr = {10, 1, 0, 3, 4, 20, 11, 100, 2, 5, 7, 14, 10};
+	    
+	    /*
+	    	Use code below (uncomment it) to test sort a billion-integer array.
+		Remember to comment out arr[] above and the printArray calls below before doing this!
+	    */
 
-        int[] arr = new int[1000000000];
+//         int[] arr = new int[1000000000];
 
-        int length = arr.length;
+//         int length = arr.length;
 
-        for (int i = 0; i < length; i++) {
-            arr[i] = ThreadLocalRandom.current().nextInt(0, 1000000000 + 1);
-        }
+//         for (int i = 0; i < length; i++) {
+//             arr[i] = ThreadLocalRandom.current().nextInt(0, 1000000000 + 1);
+//         }
 
-//        System.out.println("\nInput array");
-//        printArray(arr);
+       System.out.println("\nInput array");
+       printArray(arr);
 
-        long startTime = System.nanoTime();
-            ms.mergeSort(arr, 0, arr.length - 1);
-        long endTime = System.nanoTime();
+//         long startTime = System.nanoTime();
+         ms.mergeSort(arr, 0, arr.length - 1);
+//         long endTime = System.nanoTime();
 
         double duration = (endTime - startTime) / 1000000000;
 
-//        System.out.println("\n\nSorted array");
-//        printArray(arr);
+       System.out.println("\n\nSorted array");
+       printArray(arr);
 
         System.out.println("\nDuration\n" + duration);
     }
