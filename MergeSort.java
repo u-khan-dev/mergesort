@@ -139,7 +139,7 @@ public class MergeSort {
          ms.mergeSort(arr, 0, arr.length - 1);
 //         long endTime = System.nanoTime();
 
-        double duration = (endTime - startTime) / 1000000000;
+//         double duration = (endTime - startTime) / 1000000000;
 
        System.out.println("\n\nSorted array");
        printArray(arr);
